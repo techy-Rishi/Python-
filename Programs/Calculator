@@ -1,1 +1,2 @@
-
+a=input('Enter the arithmetic problem to solve')
+print(eval(a))

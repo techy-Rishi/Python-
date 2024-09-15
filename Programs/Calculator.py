@@ -1,17 +1,15 @@
-num1 = float(input("Enter first number: "))
-op = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
-
-if op == '+':
-    print(num1 + num2)
-elif op == '-':
-    print(num1 - num2)
-elif op == '*':
-    print(num1 * num2)
-elif op == '/':
-    if num2 != 0:
-        print(num1 / num2)
+def calculator(num1,op,num2):
+    if op == '+':
+        return(num1 + num2)
+    elif op == '-':
+        return(num1 - num2)
+    elif op == '*':
+        return(num1 * num2)
+    elif op == '/':
+        if num2 != 0:
+            return(num1 / num2)
+        else:
+            return("Error! Division by zero.")
     else:
-        print("Error! Division by zero.")
-else:
-    print("Invalid operator")
+        return("Invalid operator")
+print(calculator(67,'+',2))

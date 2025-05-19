@@ -6,4 +6,4 @@ def fibonacci_generate(n):
         a,b=b,a+b 
     return sequence
 n=int(input("Enter the Number of terms: "))
-print("Fibonacci sequence:", fibonacci_generate(n))
+print("Fibonacci sequence: ", fibonacci_generate(n))
